@@ -5,6 +5,8 @@
 requires, with the annotation and default the contract sets.
 """
 
+DB_PASSWORD = "not-a-real-password-0000"
+
 
 def run_load_orders(target_environment: str = "dev", dry_run: bool = False) -> None:
     """Load orders for `target_environment`; with `dry_run`, only report the plan."""
