@@ -42,10 +42,6 @@ parameters:
     annotation: str
     default: '"dev"'
     severity: error
-  - name: dry_run
-    annotation: bool
-    default: "False"
-    severity: warning
 
 # A function is in scope when it matches ANY rule below.
 applies_to:
