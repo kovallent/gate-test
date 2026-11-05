@@ -1,0 +1,7 @@
+# Whoever can edit the workflow can drop the gate (kv-cli ADR 0001), so the
+# gate's workflow, its contract and this file all need the owner's review.
+# `kovallent` is a personal account, so there is no `@kovallent/owners` team;
+# the account owner is the code owner.
+/.github/workflows/ @kovallent
+/.kovallent.yaml @kovallent
+/.github/CODEOWNERS @kovallent
