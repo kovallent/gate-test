@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
   # Only needed with upload-url, below.
-  id-token: write  # kovallent:allow-secret
+  id-token: write
 
 jobs:
   kovallent:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: kovallent/kv-cli@v0.7.1
+      - uses: kovallent/kv-cli@v0.7.2
         with:
           # An organization variable: pull-request authors cannot edit it.
           expect-contract: ${{ vars.KOVALLENT_CONTRACT_SHA }}
