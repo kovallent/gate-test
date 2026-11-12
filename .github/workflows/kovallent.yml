@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
   # Only needed with upload-url, below.
-  # id-token: write
+  id-token: write  # kovallent:allow-secret
 
 jobs:
   kovallent:
@@ -23,4 +23,4 @@ jobs:
           # An organization variable: pull-request authors cannot edit it.
           expect-contract: ${{ vars.KOVALLENT_CONTRACT_SHA }}
           # Optional: upload the JSON report. Needs `id-token: write` above.
-          # upload-url: https://…
+          upload-url: https://platform-app-ik1p.onrender.com/v1/runs
