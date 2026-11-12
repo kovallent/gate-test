@@ -220,13 +220,3 @@ fix:
   env_var_prefix: ""
   # Written next to each modified file. Set to "" to disable backups.
   backup_suffix: ".kvbak"
-
-
-permissions:
-  contents: read
-  id-token: write      # uncomment: the Action requests an OIDC token for the upload
-
-      - uses: kovallent/kv-cli@v0.7.1
-        with:
-          expect-contract: ${{ vars.KOVALLENT_CONTRACT_SHA }}
-          upload-url: https://platform-app-ik1p.onrender.com/v1/runs
