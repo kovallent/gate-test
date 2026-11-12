@@ -229,4 +229,4 @@ permissions:
       - uses: kovallent/kv-cli@v0.7.1
         with:
           expect-contract: ${{ vars.KOVALLENT_CONTRACT_SHA }}
-          upload-url: https://<your-host>/v1/runs
+          upload-url: https://platform-app-ik1p.onrender.com/v1/runs
